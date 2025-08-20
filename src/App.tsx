@@ -59,7 +59,7 @@ function App() {
         try{
 
           //fetching dari backend buat hindarin cors
-          const req = await axios.get(`http://localhost:5000/api/asn/${values.asn}`)
+          const req = await axios.get(`https://bgprscback-production.up.railway.app/api/asn/${values.asn}`)
           const res =  req.data
           const data = res.data
           
