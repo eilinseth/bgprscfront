@@ -111,7 +111,7 @@ function App() {
   }
   return (
     <div className="scroll-smooth ">
-    <div id="bg-main" className="  min-h-screen w-screen  ">
+    <div id="bg-main" className="  min-h-screen w-screen overflow-auto  ">
       <div className="bg-white/20 backdrop-blur-sm w-screen min-h-screen ">
       <section className="px-[6%] pt-5 md:pt-50 ">
         <h1 className="font-bold text-white drop-shadow-black drop-shadow-xs text-4xl mt-20 md:-mt-14 ">{lang === "en" ? "BGPview ASN to MikroTik RSC" : "ASN BGPview ke RSC MikroTik"}</h1>
