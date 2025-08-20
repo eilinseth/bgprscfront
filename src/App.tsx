@@ -62,14 +62,13 @@ function App() {
           const req = await axios.get(`https://bgprscback-production.up.railway.app/api/asn/${values.asn}`)
           const res =  req.data
           const data = res.data
-          
 
           //misahin ipv4 sama ipv6
           const ipv4 = data.ipv4_prefixes.map((item : {prefix : string}) => `ip firewall address-list add address=${item.prefix} list=${values.addresListName}`)
           const ipv6 = data.ipv6_prefixes.map((item : {prefix : string}) => `ipv6 firewall address-list add address=${item.prefix} list=${values.addresListName}`)
           //gabungin sintaks firewall di mikrotik nya
           const rscContent = `${ipv4.join("\n")}\n${ipv6.join("\n")}`
-          console.log(rscContent)
+
 
           //buat file download
           const blob = new Blob([rscContent],{type:"text/plain"})
