@@ -136,7 +136,7 @@ function App() {
           </div>
       </div>
     </div>
-        <section className="min-h-screen w-screen bg-slate-300 py-20 md:px-20 " >
+        <section className="min-h-screen w-screen bg-slate-300 py-20 md:px-20 overflow-auto" >
           <h1 className="text-center mb-10 text-4xl bg-linear-90 md:mb-20 from-[#3B82F6] to-[#9333EA] bg-clip-text text-transparent font-bold">{lang === "en" ? "Generate Mikrotik Firewall Script" : "Membuat Script Firewall Mikrotik"}</h1>
 
           <div className="flex justify-center items-center flex-col gap-5">
