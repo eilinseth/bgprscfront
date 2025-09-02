@@ -274,7 +274,7 @@ function App() {
         </section>
 
         <section className="w-screen h-[4rem] bg-amber-900 flex items-center justify-center">
-            <p className="text-slate-300">eilinseth&copy; 2025</p>
+            <p className="text-slate-300">Akbar Kusumah&copy; 2025</p>
         </section>
     </div>
   )
